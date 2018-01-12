@@ -25,7 +25,7 @@
 # | other than your home directory.      |
 # %--------------------------------------%
 #
-home = /opt/ccx-212-patch-PW/ARPACK
+home = /home/marmar/scratch/parallelWorks/FEA/CalculiX/calculix-pw/ccx-212-patch-PW/ARPACK
 #
 #  %--------------------------------------%
 #  | The platform identifier to suffix to |

@@ -340,8 +340,8 @@
                write(*,*) '*ERROR in checkinputvaluesnet: '
                write(*,*) '       element TYPE=ROTATING CAVITY
      &                    (Radial inflow)'
-               write(*,*) '       the specified upstream radius is smaller
-     &                     than'
+               write(*,*) '       the specified upstream radius is 
+     &                     smaller than'
                write(*,*) '       the specified downstream radius!'
                write(*,*) '       Please check the element definition.'
                write(*,*) '       element number: ',nelem
@@ -352,8 +352,8 @@
                write(*,*) '*ERROR in checkinputvaluesnet: '
                write(*,*) '       element TYPE=ROTATING CAVITY
      &                    (Radial inflow)'
-               write(*,*) '       the specified upstream radius is smaller
-     &                     than'
+               write(*,*) '       the specified upstream radius is 
+     &                     smaller than'
                write(*,*) '       the specified downstream radius!'
                write(*,*) '       Please check the element definition.'
                write(*,*) '       element number: ',nelem
@@ -398,8 +398,8 @@
      &              .or.(prop(index+3).le.0.d0))then
                   write(*,*) '*ERROR in checkinputvaluesnet:'
                   write(*,*) '       trying to define a branch '
-                  write(*,*) '       all three elements must be different
-     &                        from 0'
+                  write(*,*) '       all three elements must be 
+     &                        different from 0'
                   write(*,*) '       element number: ',nelem
                   call exit(201)
 !

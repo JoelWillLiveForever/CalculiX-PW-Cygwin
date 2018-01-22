@@ -244,8 +244,8 @@
                elseif(prlab(ii)(1:4).eq.'ENER') then
                   write(5,*)
                   write(5,109) elset(1:ipos-2),ttime+time
- 109              format(' internal energy density (elem, integ.pnt.,energy) for 
-     &set ',A,' and time ',e14.7)
+ 109              format(' internal energy density (elem, integ.pnt.,
+     &energy) for set ',A,' and time ',e14.7)
                   write(5,*)
                elseif(prlab(ii)(1:4).eq.'SDV ') then
                   write(5,*)

@@ -1,11 +1,11 @@
 # pandoc --from org --to markdown_github  README_0.org  -s -o README0.md 
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil 
 #+OPTIONS: ^:nil
 
 * CalculiX - Parallel Works 
 This repository contains the open source FEM software  CalculiX with some modifications and some relevant tools. 
 
-** current configuration
+** Current configuration
    - Based on [[http://www.calculix.de/][CalculiX]] version 2.12 (multi-threaded version, see the notes below) 
  	 
 ** Installing CalculiX (multi-threads):
@@ -43,7 +43,7 @@ This repository contains the open source FEM software  CalculiX with some modifi
 		=drawTree.c= to =draw.c=
 	  - In =spooles.2.2/Make.inc= change:
 		=CC = /usr/lang-4.0/bin/cc= to =CC = /usr/bin/cc=
-   3. If downloaing the =ARPACK= (=arpack96.tar.Z=) and patch (=patch.tar.Z=) from http://www.caam.rice.edu/software/ARPACK/
+   3. If downloading the =ARPACK= (=arpack96.tar.Z=) and patch (=patch.tar.Z=) from http://www.caam.rice.edu/software/ARPACK/
 	  make the following changes (*These changes have already been applied to the spooles files in this repository*):
 	  - In =ARPACK/ARmake.inc= change:
 		+ =home = $(HOME)/ARPACK= to =home = /usr/local/ARPACK=

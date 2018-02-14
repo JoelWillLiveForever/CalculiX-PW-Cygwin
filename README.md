@@ -3,7 +3,7 @@ CalculiX - Parallel Works
 
 This repository contains the open source FEM software CalculiX with some modifications and some relevant tools.
 
-current configuration
+Current configuration
 ---------------------
 
 -   Based on [CalculiX](http://www.calculix.de/) version 2.12 (multi-threaded version, see the notes below)
@@ -41,10 +41,10 @@ We followed the directions for installing CalculiX Multi-Thread on Ubuntu from [
     libxmu-dev \
     ```
 
-2.  If downloading the Spooles package from (<http://www.netlib.org/linalg/spooles/spooles.2.2.html>), make the following changes (**The changes have already been applied to the spooles files in this repository**):
+2.  If downloading the Spooles package from (<http://www.netlib.org/linalg/spooles/spooles.2.2.html>), make the following changes (**These changes have already been applied to the spooles files in this repository**):
     -   In `spooles.2.2/Tree/src/makeGlobalLib` change: `drawTree.c` to `draw.c`
     -   In `spooles.2.2/Make.inc` change: `CC = /usr/lang-4.0/bin/cc` to `CC = /usr/bin/cc`
-3.  If downloaing the `ARPACK` (`arpack96.tar.Z`) and patch (`patch.tar.Z`) from <http://www.caam.rice.edu/software/ARPACK/> make the following changes (**The changes have already been applied to the spooles files in this repository**):
+3.  If downloading the `ARPACK` (`arpack96.tar.Z`) and patch (`patch.tar.Z`) from <http://www.caam.rice.edu/software/ARPACK/> make the following changes (**These changes have already been applied to the spooles files in this repository**):
     -   In `ARPACK/ARmake.inc` change:
         -   `home = $(HOME)/ARPACK` to `home = /usr/local/ARPACK`
         -   `PLAT = SUN4` to `PLAT = linux`
@@ -68,7 +68,7 @@ We followed the directions for installing CalculiX Multi-Thread on Ubuntu from [
         ```
 
 5.  Compile ARPACK:
-    1.  **Make sure you update the `home` variable in `ccx-212-patch-PW/ARPACK/ARmake.inc`** **to the root of the `ARPACK` source tree (Top level of ARPACK directory)**
+    1.  **Make sure you update the `home` variable in `CalculiX-PW/ARPACK/ARmake.inc`** **to the root of the `ARPACK` source tree (Top level of ARPACK directory)**
     2.  Change to ARPACK directory:
 
         ``` example

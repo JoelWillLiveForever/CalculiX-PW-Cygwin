@@ -1,0 +1,3 @@
+[submodule "ccx"]
+    path = ccx
+    url = https://github.com/calculix/ccx

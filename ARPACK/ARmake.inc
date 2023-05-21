@@ -25,7 +25,7 @@
 # | other than your home directory.      |
 # %--------------------------------------%
 #
-home = /home/marmar/scratch/parallelWorks/FEA/CalculiX/calculix-pw/ccx-212-patch-PW/ARPACK
+home = /cygdrive/c/Libs/CalculiX-PW-Cygwin/ARPACK
 #
 #  %--------------------------------------%
 #  | The platform identifier to suffix to |
@@ -102,7 +102,7 @@ ALIBS =  $(ARPACKLIB) $(LAPACKLIB) $(BLASLIB)
 # %-----------------------------------------%
 #
 FC      = gfortran
-FFLAGS	= -O2
+FFLAGS	= -O3 -fallow-argument-mismatch
 
 LDFLAGS = 
 CD      = cd

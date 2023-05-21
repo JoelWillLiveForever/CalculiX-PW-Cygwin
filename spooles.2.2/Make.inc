@@ -28,9 +28,9 @@
 # 
 # OPTLEVEL = 
 # OPTLEVEL = -g -v
-  OPTLEVEL = -O
+# OPTLEVEL = -O
 # OPTLEVEL = -xO5 -v
-# OPTLEVEL = -O3
+  OPTLEVEL = -O3
 # OPTLEVEL = -O4
 # CFLAGS = -Wall -g
 # CFLAGS = -Wall -pg
